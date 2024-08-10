@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+button:hover {
+    color: #fff;
+    border-image: linear-gradient(115deg, yellow, red) 1;
+    transform: scale(1.05);
+}
+
+button {
+    color: gray;
+    background-color: black;
+    border-image: linear-gradient(115deg, red, yellow) 1;
+}
+
+.container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.child {
+    padding-top: 50px;
+}

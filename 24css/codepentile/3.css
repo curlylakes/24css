@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+footer {
+    color: #fff;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.card {
+    min-width: 100px;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #1c1e21;
+    transition: 0.8s;
+    color: #fff;
+}
+
+.main-img img {
+    min-width: 100px;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.user-info {
+    display: inline-grid;
+    grid-template-rows: 1;
+    grid-template-columns: 2;
+    grid-column-gap: 10px;
+    color: #fff;
+}
+
+.username {
+    grid-column: 2/2;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.user-img img {
+    min-width: 20px;
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    grid-column: 1/2;
+}
+
+.interactions {
+    display: none;
+}
+
+.card:hover .interactions {
+    display: flex;
+}
