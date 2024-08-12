@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --flag-height: 200px;
+}
+
+body {
+    background-color: darkgray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flag {
+    display: flex;
+    width: var(--flag-height);
+    aspect-ratio: 1/1;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.rectangle1 {
+    position: absolute;
+    background-color: white;
+    width: calc(var(--flag-height) * 3 / 16);
+    height: calc(var(--flag-height) * 5 / 8);
+}
+
+.rectangle2 {
+    position: absolute;
+    background-color: white;
+    width: calc(var(--flag-height) * 5 / 8);
+    height: calc(var(--flag-height) * 3 / 16);
+}

@@ -4,7 +4,7 @@
 }
 
 :root {
-    --flag-height: 200px;
+    --flag-height: 150px;
 }
 
 body {
@@ -31,24 +31,25 @@ body {
 }
 
 .flag {
-    display: inline-grid;
-    grid-template-rows: 3;
+    display: flex;
     height: var(--flag-height);
-    width: auto;
-    aspect-ratio: 2/3;
+    width: calc(var(--flag-height) * 1.5);
     background-color: black;
 }
 
 .s1 {
     background-color: white;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    width: calc(var(--flag-height) / 2);
 }
 
 .s2 {
     background-color: red;
+    width: var(--flag-height);
+    height: 50%;
 }
 
 .s3 {
     background-color: green;
+    width: var(--flag-height);
+    height: 50%;
 }
